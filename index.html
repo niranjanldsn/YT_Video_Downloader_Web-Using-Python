@@ -1,0 +1,26 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+{% extends "Bootstrap/base.html" %}
+
+{% block content %}
+
+<header>
+    <div class="jumbotron text-center">
+        <h1>Youtube Downloads</h1>
+    </div>
+</header>
+<div class="container" class="panel panel-default">
+    <form action="/main" method="post">
+        <div class="form-row">
+            <input type="text" class="form-control"
+                   placeholder="Enter a youtube video url"
+                   name="firstvideo"           />
+        </div>
+        <div class="form-row">
+            <input type="submit" value="Start Downloading" class="btn-info btn-lg" />
+        </div>
+    </form>
+
+</div>
+
+
+{% endblock %}
